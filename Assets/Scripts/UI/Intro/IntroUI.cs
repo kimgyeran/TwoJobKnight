@@ -21,10 +21,8 @@ public class IntroUI : MonoBehaviour, IPointerClickHandler
 
 
 
-        Title.GetComponent<RectTransform>().DOAnchorPosY(-420f, 1f).SetEase(Ease.InExpo).onComplete = () =>
+        Title.GetComponent<RectTransform>().DOAnchorPosY(-50f, 2f).SetEase(Ease.OutBounce).onComplete = () =>
         {
-
-            Title.GetComponent<RectTransform>().DOAnchorPosY(-440f, 1f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo).SetAutoKill();
             StartCoroutine(blink());
         };
     }
