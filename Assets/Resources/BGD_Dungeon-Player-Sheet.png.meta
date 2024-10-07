@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 209e227c464255943ab783e8842a124e
+guid: 9011ff7383b95c34eb63de2cf67f142e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BGD_Dungeon_Player-Sheet_0
+      name: BGD_Dungeon-Player-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce882b571ff078542b889527f16d5bc8
-      internalID: -2092396480
+      spriteID: 0e82ee97acfae8444a564e0896925c73
+      internalID: 186940967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BGD_Dungeon_Player-Sheet_1
+      name: BGD_Dungeon-Player-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a70b3b1bff0d124baa51910981f68e4
-      internalID: 827191457
+      spriteID: 0457d4c936b252b4da3a29b81b4fa1d0
+      internalID: -1210967981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BGD_Dungeon_Player-Sheet_2
+      name: BGD_Dungeon-Player-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +166,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a1c620e50e039c4486a61d7b8f5ad07
-      internalID: 1295829783
+      spriteID: f103671657e65b547bff2aac526920ed
+      internalID: -1225864608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGD_Dungeon-Player-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b48dd45159bf554e854b52c9a7d9b00
+      internalID: -1991624437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BGD_Dungeon-Player-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d56ec9ef29bd44ca1ada5e88a02849
+      internalID: -1976268154
       vertices: []
       indices: 
       edges: []
@@ -183,9 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BGD_Dungeon_Player-Sheet_0: -2092396480
-      BGD_Dungeon_Player-Sheet_1: 827191457
-      BGD_Dungeon_Player-Sheet_2: 1295829783
+      BGD_Dungeon-Player-Sheet_0: 186940967
+      BGD_Dungeon-Player-Sheet_1: -1210967981
+      BGD_Dungeon-Player-Sheet_2: -1225864608
+      BGD_Dungeon-Player-Sheet_3: -1991624437
+      BGD_Dungeon-Player-Sheet_4: -1976268154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
