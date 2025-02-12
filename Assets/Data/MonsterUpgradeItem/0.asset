@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6f8abb6b9d63e4aaa51c981f3f216a, type: 3}
+  m_Name: 0
+  m_EditorClassIdentifier: 
+  ID: 0
+  Name: Slime
+  Description: Slime Upgrade
+  Price: 500
+  Icon: Slime
+  EffectType: 
+  EffectAmount: 0
+  Level: 0
+  IncreaseRate: 10
+  m_MonsterDB: {fileID: 11400000, guid: 97d9ce7e58436e140bb6abcc36eeced5, type: 2}
+  MonsterID: 0

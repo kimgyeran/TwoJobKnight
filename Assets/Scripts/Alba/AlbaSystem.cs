@@ -1,54 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class AlbaSystem : MonoBehaviour
 {
-    long mps;
-    long mpt;
-    public long MPS { get { return mps; } set { mps = value; PropertyChangedEvent?.Invoke("MPS", value); } }
-    public long MPT { get { return mpt; } set { mpt = value; PropertyChangedEvent?.Invoke("MPT", value); } }
-    public UnityEvent<string, object> PropertyChangedEvent;
-    // Start is called before the first frame update
-    void Start()
-    {
-        initStatus();
-        StartCoroutine(Timer());
-    }
+    [Header("View")]
+    public Button ClickZone;
+    public Animator AlbaAnimator;
+    public TextMeshProUGUI MoneyPerClickText;
+    public TextMeshProUGUI MoneyPerSecText;
 
-    // Update is called once per frame
-    void Update()
+    [Header("Data"), SerializeField]
+    private long moneyPerClick = 10;
+    private long moneyPerSec = 50;
+    public long MoneyPerClick
     {
+        get { return moneyPerClick; }
+        set { moneyPerClick = value; MoneyPerClickText.text = value.ToString(); }
+    }
+    public long MoneyPerSec
+    {
+        get { return moneyPerSec; }
+        set { moneyPerSec = value; MoneyPerSecText.text = value.ToString(); }
+    }
+    
+    private void Start()
+    {
+        GameManager.Instance.AlbaSystem = this;
+        ClickZone.onClick.AddListener(OnClickHandler);
+        StartCoroutine(AutoAlba());
+    }
+    public void OnClickHandler()
+    {
+        AlbaAnimator.SetTrigger("Work");
+        GameManager.Instance.Money += MoneyPerClick;
+    }
+    #region Alba Animation
 
-    }
-    private void OnDisable()
+    #endregion
+    IEnumerator AutoAlba()
     {
-        StopCoroutine(Timer());
-    }
-    public void IncreaseMoneyAtMPS()
-    {
-        GameManager.Instance.Money += mps;
-    }
-
-    public void IncreaseMoneyAtMPT()
-    {
-        GameManager.Instance.Money += mpt;
-    }
-
-    IEnumerator Timer()
-    {
-        while (true)
+        while (enabled)
         {
-            IncreaseMoneyAtMPS();
             yield return new WaitForSeconds(1f);
+            AlbaAnimator.SetTrigger("Work");
+
+            GameManager.Instance.Money += MoneyPerSec;
         }
-    }
 
-    void initStatus()
+    }
+    void SetAnimSpeed()
     {
-        MPS = 10;
-        MPT = 10;
+        
     }
-
 }

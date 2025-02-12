@@ -10,14 +10,28 @@ public class GameManager : MonoBehaviour
     {
         get
         {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<GameManager>();
+                if (instance == null)
+                {
+                    GameObject go = new GameObject(typeof(GameManager).Name);
+                    instance = go.AddComponent<GameManager>();
+                }
+            }
             return instance;
         }
     }
-
+    public AlbaSystem AlbaSystem;
+    public DungeonSystem DungeonSystem;
     public long Money;
-    // Start is called before the first frame update
 
-    void Start()
+
+    void Awake()
+    {
+        init();
+    }
+    void init()
     {
         if (instance == null)
         {
@@ -26,11 +40,5 @@ public class GameManager : MonoBehaviour
         }
         else
             Destroy(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecac2d7e6ed0da49a3fbc9759b5ab91, type: 3}
+  m_Name: 0
+  m_EditorClassIdentifier: 
+  Name: Field
+  Description: A peaceful and beautiful field where grass grows.
+  Monsters:
+  - {fileID: 11400000, guid: 1d3cf030b7f945241964abfba2b03de8, type: 2}
+  - {fileID: 11400000, guid: fb4362594dbbf0c4a9c54751f250e2c2, type: 2}
+  SpawnProbabilities:
+  - 1
+  - 0
